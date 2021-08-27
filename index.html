@@ -7,27 +7,34 @@
 
   <body>
 
-    <div id="container">
-    
-      <div class="status-box">    
-        <div>
-          <p>Boy's Room</p>
-          <div class="status-light" id="boys-room"></div>
-          <div id="boys-room-status"></div>
-        </div>
+    <div id="main-container">
 
-        <div>
-          <p>Girl's Room</p>
-          <div class="status-light" id="girls-room"></div>
-          <div id="girls-room-status"></div>
-        </div>         
+      <div id="app-container">      
+        <div class="status-container">    
+          <div>
+            <p>Boys' Room</p>
+            <div class="status-light" id="boys-room"></div>
+            <div id="boys-room-status" class="status-box"></div>
+          </div>
+
+          <div>
+            <p>Girls' Room</p>
+            <div class="status-light" id="girls-room"></div>
+            <div id="girls-room-status" class="status-box"></div>
+          </div>         
+          
+        </div>
+        <input type="text" id="card-scan-box" />
+        <button id="generate-report-btn">Generate Report</button>
         
       </div>
-      <input type="text" id="card-scan-box" />
-      
+
+      <div id="report-container">
+      </div>
     </div>
 
   </body>
   <script src="app.js"></script>
   <script src="students.js"></script>
+  <script src="generateReport.js"></script>
 </html>
